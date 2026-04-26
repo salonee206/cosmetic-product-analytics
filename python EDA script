@@ -1,0 +1,18 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load data
+df = pd.read_excel('data/clinical_data.xlsx')
+
+# Summary
+print(df.describe())
+
+# Trend plot
+sns.lineplot(data=df, x='Visit', y='L*')
+plt.title('Skin Brightness Over Time')
+plt.show()
+
+sns.lineplot(data=df, x='Visit', y='Hydration')
+plt.title('Hydration Over Time')
+plt.show()
