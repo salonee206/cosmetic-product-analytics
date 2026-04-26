@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load data
-df = pd.read_excel('data/clinical_data.xlsx')
+df = pd.read_excel('demo_data.xlsx')
 
 # Summary
 print(df.describe())
